@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="36.468069">
+<testcase classname="Site Tracker QA Exercise" name="Validate end to end flow for SiteTracker QA exercise" time="36.468069">
+<failure message="org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[text()=&quot;Select Item 3&quot;]/parent::label/parent::span//input[@type=&quot;checkbox&quot;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-F0931AC', ip: '192.168.43.169', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_192'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy15.getWrappedElement(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)&#13;&#10;&#9;at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;&#10;&#9;at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;&#10;&#9;at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)&#13;&#10;&#9;at stepDefinitions.StepDefinition.under_the_section_Preview_Edit_Update_the_values_for_all_the_columns_in_third_row_in_the_table_by_clicking_on_the_pencil_icon(StepDefinition.java:116)&#13;&#10;&#9;at ✽.Then Under the section Preview &gt; Edit/Update the values for all the columns in third row in the table by clicking on the pencil icon(src/main/java/features/SiteTrackerFeature.feature:11)&#13;&#10;"><![CDATA[Given User opens the browser................................................passed
+Then Salesforce Developers Landing page is displayed........................passed
+And Switch to Component Reference tab.......................................passed
+And Search in Quick Find for datatable......................................passed
+And Under Lightning Web Components, click on the Components>lightning>datatable on the left menu panel.passed
+And Under Example tab on the main pane > select Datatable from Inline Edit from the dropdown.passed
+And Click on the Run button.................................................passed
+Then Under the section Preview > Edit/Update the values for all the columns in third row in the table by clicking on the pencil icon.failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[text()="Select Item 3"]/parent::label/parent::span//input[@type="checkbox"]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F0931AC', ip: '192.168.43.169', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_192'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at stepDefinitions.StepDefinition.under_the_section_Preview_Edit_Update_the_values_for_all_the_columns_in_third_row_in_the_table_by_clicking_on_the_pencil_icon(StepDefinition.java:116)
+	at ✽.Then Under the section Preview > Edit/Update the values for all the columns in third row in the table by clicking on the pencil icon(src/main/java/features/SiteTrackerFeature.feature:11)
+]]></failure>
+</testcase>
+</testsuite>
